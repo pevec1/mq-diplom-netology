@@ -668,19 +668,16 @@ h3 {
 }
 .shop-container {
     display: flex;
-    margin: 0;
+    margin: 0 0 0 45px;
     padding: 0;
-    width: 1600px;
-    min-width: 1650px;
+    /* width: 1600px; */
+    min-width: 1200px;
     box-sizing: border-box;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-around;
     margin-top: 35px;
     margin-bottom: 280px;
-    padding: 0 40px 0 40px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .shop__img {
@@ -728,7 +725,7 @@ h3 {
 .shop-list {
     position: relative;
     box-sizing: border-box;
-    margin: 0 75px;
+    margin: 0 40px;
     width: 355px;
 }
 
@@ -792,7 +789,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1600px;
+    width: 1200px;
     height: 83px;
     background-color: #f4f7f6;
     margin-left: auto;
