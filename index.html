@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ diplom Andrei</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_640.css">
+    <link rel="stylesheet" href="css/styles_320.css">
 </head>
 <body>
     <header class="head">
         <div class="container">
             <a href="#0"><img src="svg/noemi-logo.svg"
                     class="head-logo" alt="Logo"></a>
-            <nav class="menu">
+                    <nav class="menu">
+
+                        <button class="menu__button">
+                            <span class="menu__button-label">Открыть меню</span>
+                          </button>
+
                 <ul class="menu-list">
                     <li class="menu-list-item">
                         <a class="menu-link" href="#0">Главная</a>
@@ -39,6 +46,47 @@
             <a href="#0" class="link-title">Блог о творчестве, спорте, и образе жизни</a>
         </h1>
     </header>
+<div class="form-page visually-hidden">
+ <form class="form-feedback">
+    <div class="form-title">
+        <h2 class="feedback-title">Ваш фидбек</h2>
+    </div>
+    <div class="form-row">
+        <label class="form-group">
+            <span class="form-hint">Как часто вы заходите на сайт?</span>
+            <select class="select">
+                <option selected>Почти каждый день</option>
+                <option>Каждую неделю</option>
+                <option>Редко</option>
+            </select>
+        </label>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group" required>
+                <span class="radio-group-text">Да</span>
+            </label>
+            <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group" required>
+                <span class="radio-group-text">Нет</span>
+            </label>
+        </div>
+    </div>
+    <div class="form-row">
+        <label class="textarea-label">
+            <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
+        </label>
+    </div>
+    <div class="form-row">
+        <button class="button">Отправить</button>
+    </div>
+<button class="popup__close" type="button">Закрыть окно</button>
+</form>
+</div>
+
     <div class="trend-title">
         <h2 class="trend">Сейчас в тренде</h2>
     </div>
@@ -115,7 +163,7 @@
                     <img src="img/last-post1.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">travel</li>
                         <li class="tag">health</li>
@@ -142,7 +190,7 @@
                     <img src="img/last-post2.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">health</li>
                         <li class="tag">lifestyle</li>
@@ -168,7 +216,7 @@
                     <img src="img/last-post3.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">music</li>
                     </ul>
@@ -193,7 +241,7 @@
                     <img src="img/last-post4.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">lifestyle</li>
                         <li class="tag">food</li>
@@ -219,7 +267,7 @@
                     <img src="img/last-post5.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">lifestyle</li>
                         <li class="tag">interior</li>
@@ -246,7 +294,7 @@
                     <img src="img/last-post6.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">travel</li>
                         <li class="tag">lifestyle</li>
@@ -272,7 +320,7 @@
                     <img src="img/last-post4.jpg" alt=""
                         class="image-post">
                 </figure>
-                <div class="content">
+                <div class="post-content">
                     <ul class="tags">
                         <li class="tag">lifestyle</li>
                         <li class="tag">food</li>
@@ -365,7 +413,7 @@
                     <label for="field" class="search-group visually-hidden">
                         Введите фразу для поиска
                     </label>
-                    <button class="button"><span class="visually-hidden">Найти</span></button>
+                    <button class="button-search"><span class="visually-hidden">Найти</span></button>
     
                 </form>
                 <h3 class="mailing-list">рассылка</h3>
@@ -450,6 +498,7 @@
         </section>
         <section class="shop-list">
             <div class="shop__list">
+                
                 <img class="shop__img" src="img/shop-item-desk3.jpg">
             </div>
             <div class="shop-content">
