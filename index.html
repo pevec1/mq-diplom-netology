@@ -46,7 +46,7 @@
             <a href="#0" class="link-title">Блог о творчестве, спорте, и образе жизни</a>
         </h1>
     </header>
-<div class="form-page visually-hidden">
+<div class="form-page">
  <form class="form-feedback">
     <div class="form-title">
         <h2 class="feedback-title">Ваш фидбек</h2>
@@ -56,8 +56,9 @@
             <span class="form-hint">Как часто вы заходите на сайт?</span>
             <select class="select">
                 <option selected>Почти каждый день</option>
-                <option>Каждую неделю</option>
-                <option>Редко</option>
+                <option>Раз в несколько дней</option>
+                <option>Раз в несколько недель</option>
+                <option>Несколько раз в год</option>
             </select>
         </label>
     </div>
@@ -87,11 +88,10 @@
 </form>
 </div>
 
-    <div class="trend-title">
+    <section class="trend-container">
         <h2 class="trend">Сейчас в тренде</h2>
-    </div>
-        <div class="trend-container">
-            <section class="trend-list">
+    <div class="trend-title">
+            <article class="trend-list">
             <div class="trend__list">
                 <img class="trend__img" src="img/trend1.jpg">
             </div>
@@ -106,8 +106,8 @@
                     на подоконнике
                 </h2>
             </div>
-        </section>
-            <section class="trend-list">
+        </article>
+            <article class="trend-list">
             <div class="trend__list">
                 <img class="trend__img" src="img/trend2.jpg">
             </div>
@@ -122,8 +122,8 @@
                     какие они на вкус?
                 </h2>
             </div>
-            </section>
-            <section class="trend-list">
+            </article>
+            <article class="trend-list">
             <div class="trend__list">
                 <img class="trend__img" src="img/trend3.jpg">
             </div>
@@ -138,8 +138,8 @@
                     ПОХОД В ГОРЫ
                 </h2>
             </div>
-            </section>
-            <section class="trend-list">
+            </article>
+            <article class="trend-list">
             <div class="trend__list">
                 <img class="trend__img" src="img/trend4.jpg">
             </div>
@@ -154,8 +154,9 @@
                     ВИТАМИНА c В ЛИМОНАХ?
                 </h2>
             </div>
-            </section>
+            </article>
         </div>
+    </section>
     <div class="main">
         <main class="posts">
             <article class="post">
@@ -344,8 +345,8 @@
         </main>
     
         <aside class="sidebar">
-            <h3 class="new-title">новые посты</h3>
             <section class="new-posts">
+            <h3 class="new-title">новые посты</h3>
                 <article class="new-post"> <img src="img/2.jpg"
                         alt="" class="new-image-post">
                     <div class="content">
@@ -408,6 +409,8 @@
                         </h2>
                     </div>
                 </article>
+                </section>
+                <section class="new-posts">
                 <form class="search">
                     <input class="field" name="query" placeholder="    Найти..." id="field" required>
                     <label for="field" class="search-group visually-hidden">
@@ -416,6 +419,8 @@
                     <button class="button-search"><span class="visually-hidden">Найти</span></button>
     
                 </form>
+            </section>
+            <section class="new-posts">
                 <h3 class="mailing-list">рассылка</h3>
                 <form class="mailing">
                     <label for="mail" class="mailing-group visually-hidden">
@@ -423,6 +428,8 @@
                     <input class="mail" name="query2" placeholder="    Ваш email-адрес" id="mail" required>
                     <button class="mail-button">подписаться</button>
                 </form>
+            </section>
+            <section class="new-posts">
                 <h3 class="tags-list">теги</h3>
                 <ul class="tag-list">
                     <li class="tag-item"><a href="#0">fashion</a></li>
@@ -434,7 +441,8 @@
                     <li class="tag-item"><a href="#0">food</a></li>
                     <li class="tag-item"><a href="#0">health</a></li>
                 </ul>
-    
+    </section>
+    <section class="new-posts">
                 <h3 class="themes-list">темы</h3>
                 <ul class="theme-list">
                     <li class="theme-item"><a href="#0" class="theme-href">Красота</a><span class="super">12</span></li>
@@ -449,11 +457,11 @@
         </aside>
     </div>
     
-    <div class="our-products-title">
-        <h2 class="our-products">Наши изделия</h2>
-    </div>
-    <div class="shop-container">
-        <section class="shop-list">
+    <section class="shop-container">
+       <h2 class="our-products">Наши изделия</h2>
+     <div class="our-products-title">
+      
+      <article class="shop-list">
             <div class="shop__list">
                 <img class="shop__img" src="img/shop-item-desk1.jpg">
             </div>
@@ -473,8 +481,8 @@
                     <button class="shop-button">В МАГАЗИН</button>
                 </div>
             </div>
-        </section>
-        <section class="shop-list">
+        </article>
+        <article class="shop-list">
             <div class="shop__list">
                 <img class="shop__img" src="img/shop-item-desk2.jpg">
             </div>
@@ -495,8 +503,8 @@
                     <button class="shop-button">В МАГАЗИН</button>
                 </div>
             </div>
-        </section>
-        <section class="shop-list">
+        </article>
+        <article class="shop-list">
             <div class="shop__list">
                 
                 <img class="shop__img" src="img/shop-item-desk3.jpg">
@@ -516,8 +524,11 @@
                     <button class="shop-button">В МАГАЗИН</button>
                 </div>
             </div>
-        </section>
+        </article>
+        <article class="shop-list-last">
+        </article>
     </div>
+    </section>
     <footer class="footer">
         <div class="social">
             <ul class="widget-socials">

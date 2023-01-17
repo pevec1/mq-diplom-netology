@@ -1,6 +1,6 @@
 
-@media (min-width: 641px) and (max-width: 1200px) {
-       .menu-list {
+@media (max-width: 640px) {
+    .menu-list {
         display: none;
         flex-direction: row-reverse;
         align-items: center;
@@ -300,7 +300,7 @@
     }
     
     .head {
-        background-image: url("../img/banner-bg-tablet.jpg");
+        background-image: url("../img/banner-mobile.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -331,23 +331,25 @@
     
     .container {
         box-sizing: border-box;
-        min-width: 640px;
+        min-width: 320px;
         margin-left: auto;
         margin-right: auto;
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap;
         justify-content:space-around;
         align-items: flex-start;
     }
     
     .head-logo {
-        width: 180px;
+        margin-top: 250px;
+        /* margin-left: 50px; */
+        width: 250px;
     }
     
    
     .head-title {
         max-width: 730px;
-        margin-top: 95px;
+        margin-top: 30px;
         margin-bottom: 90px;
         margin-left: auto;
         margin-right: auto;
@@ -357,8 +359,8 @@
     .link-title {
         font-family: opensans, Arial, sans-serif;
         color: #ffffff;
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 26px;
+        line-height: 36px;
         letter-spacing: 0em;
         text-transform: uppercase;
         font-weight: 700;
@@ -996,8 +998,7 @@
         text-transform: uppercase;
         padding-top: 35px;
     }
-    .shop-list,
-    .shop-list-last {
+    .shop-list {
         position: relative;
         box-sizing: border-box;
         margin: 0 40px 265px;
@@ -1066,7 +1067,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 640px;
+        width: 100vmax;
         height: 83px;
         background-color: #f4f7f6;
         margin-left: auto;
@@ -1075,7 +1076,7 @@
     }
     
     .widget-socials .widget-social {
-        /* width: 20px; */
+        width: 20px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -1119,5 +1120,4 @@
         font-size: 12px;
         font-weight: bold;
     }
-          
 }
