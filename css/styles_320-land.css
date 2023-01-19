@@ -1,6 +1,19 @@
 
-@media (max-width: 640px) and (orientation: portrait) {
-    .menu-list {
+
+@media (min-width: 600px) and (max-width: 640px) and (orientation: landscape) {
+    .shop-list-last {
+        position: relative;
+        box-sizing: border-box;
+        margin: 0 0 265px 0;
+        width: 300px;
+        left:0;
+        /* height: 100%; */
+    }
+    
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+      .menu-list {
         display: none;
         flex-direction: row-reverse;
         align-items: center;
@@ -300,7 +313,7 @@
     }
     
     .head {
-        background-image: url("../img/banner-mobile.jpg");
+        background-image: url("../img/banner-bg-tablet.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -331,26 +344,23 @@
     
     .container {
         box-sizing: border-box;
-        min-width: 320px;
+        min-width: 640px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content:space-around;
         align-items: flex-start;
     }
     
     .head-logo {
-        margin: 0 auto;
-        margin-top: 250px;
-        
-        width: 250px;
+        width: 180px;
     }
     
    
     .head-title {
         max-width: 730px;
-        margin-top: 30px;
+        margin-top: 95px;
         margin-bottom: 90px;
         margin-left: auto;
         margin-right: auto;
@@ -360,8 +370,8 @@
     .link-title {
         font-family: opensans, Arial, sans-serif;
         color: #ffffff;
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 40px;
+        line-height: 60px;
         letter-spacing: 0em;
         text-transform: uppercase;
         font-weight: 700;
@@ -1122,17 +1132,5 @@
         font-size: 12px;
         font-weight: bold;
     }
-}
-
-
-@media (min-width: 600px) and (max-width: 640px) {
-    .shop-list-last {
-        position: relative;
-        box-sizing: border-box;
-        margin: 0 0 265px 0;
-        width: 300px;
-        left:0;
-        /* height: 100%; */
+           
     }
-    
-}
