@@ -1122,7 +1122,7 @@
           
 }
 
-@media (max-width: 870px) {
+@media (max-width: 599px), (min-width:640px) and (max-width: 870px) {
     .shop-list-last {
         display: none;
     }
