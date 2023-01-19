@@ -947,7 +947,7 @@
 }
     
     .shop__img {
-        width: 70%;
+        width: 80%;
         display: flex;
         margin: 0 auto 0 auto;
     }
@@ -1001,7 +1001,7 @@
         position: relative;
         box-sizing: border-box;
         margin: 0 0 265px 0;
-        width: 80%;
+        width: 90%;
         left:0;
         /* height: 100%; */
     }
