@@ -35,6 +35,7 @@ body {
     left: 0;
     display: flex;
     z-index: 100;
+    font-family: opensans;
 }
 
 .form-title {
@@ -105,14 +106,13 @@ body {
 .form-hint {
     display: block;
     font-size: 13px;
-    font-weight: 700;
     margin-bottom: 12px;
 }
 
 .field {
     box-sizing: border-box;
     width: 480px;
-    border: 1px solid #dddddd;
+    border: none;
     padding: 15px 20px;
 
     font-family: inherit;
@@ -120,6 +120,7 @@ body {
 
 .button {
     border: none;
+    outline: none;
     padding: 15px 55px;
     color: #ffffff;
     width: 100%;
@@ -127,10 +128,11 @@ body {
     font-family: inherit;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .button:hover {
-    background-color: #b59f5b;
+    background-color: #000;
 }
 
 .form-row:last-child {
@@ -145,7 +147,8 @@ body {
 
     padding-left: 20px;
     margin: 0;
-    border: 1px solid #cbd1d4;
+    border: none;
+    outline: none;
 
     font-family: inherit;
     font-size: 14px;
@@ -164,14 +167,6 @@ body {
     background-size: 10px 20px;
 }
 
-
-.field:focus,
-.select:focus,
-.button:focus,
-.textarea:focus {
-    outline: 2px solid #b59f5b;
-    outline-offset: 5px;
-}
 
 .radio-group-text::before {
     content: "";
@@ -224,7 +219,9 @@ body {
     
         padding-left: 20px;
         margin: 0;
-        border: 1px solid #cbd1d4;
+        border: none;
+        outline: none;
+        padding-top: 15px;
     
         font-family: inherit;
         font-size: 14px;
@@ -235,14 +232,6 @@ body {
         resize: none;
 }
 
-.field:focus,
-.select:focus,
-.button:focus,
-.radio:focus~.radio-group-text,
-.checkbox:focus~.checkbox-text {
-    outline: 2px solid #b59f5b;
-    outline-offset: 5px;
-}
 .feedback-title {
     font-size: 20px;
     text-transform: uppercase;
@@ -909,7 +898,7 @@ h3 {
     margin: 0 0 0 45px;
     padding: 0;
     /* width: 1600px; */
-    min-width: 1366px;
+    /* min-width: 1366px; */
     box-sizing: border-box;
     flex-wrap: wrap;
     margin-top: 35px;
@@ -980,7 +969,7 @@ h3 {
 .shop-list {
     position: relative;
     box-sizing: border-box;
-    margin: 0 40px;
+    margin: 0 10px;
     width: 355px;
 }
 .shop-list-last {
@@ -1046,7 +1035,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1200px;
+    /* width: 1200px; */
     height: 83px;
     background-color: #f4f7f6;
     margin-left: auto;

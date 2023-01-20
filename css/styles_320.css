@@ -121,7 +121,7 @@
     }
     
     .form-row:nth-child(n+2) {
-        margin-top: 35px;
+        margin-top: 25px;
     }
     
     .form-row:last-child {
@@ -135,13 +135,12 @@
     .form-hint {
         display: block;
         font-size: 13px;
-        font-weight: 700;
         margin-bottom: 12px;
     }
     
     .field {
         box-sizing: border-box;
-        width: 480px;
+        width: 400px;
         border: 1px solid #dddddd;
         padding: 15px 20px;
     
@@ -157,12 +156,12 @@
         font-family: inherit;
         font-size: 16px;
         cursor: pointer;
+        text-transform: uppercase;
     }
     
-    .button:hover {
-        background-color: #b59f5b;
-    }
-    
+.button:hover {
+    background-color: #000;
+}
     .form-row:last-child {
         text-align: center;
     }
@@ -175,7 +174,8 @@
     
         padding-left: 20px;
         margin: 0;
-        border: 1px solid #cbd1d4;
+        border: none;
+        outline: none;
     
         font-family: inherit;
         font-size: 14px;
@@ -194,15 +194,7 @@
         background-size: 10px 20px;
     }
     
-    
-    .field:focus,
-    .select:focus,
-    .button:focus,
-    .textarea:focus {
-        outline: 2px solid #b59f5b;
-        outline-offset: 5px;
-    }
-    
+       
     .radio-group-text::before {
         content: "";
         display: inline-block;
@@ -254,7 +246,9 @@
         
             padding-left: 20px;
             margin: 0;
-            border: 1px solid #cbd1d4;
+            border: none;
+            outline: none;
+            padding-top: 10px;
         
             font-family: inherit;
             font-size: 14px;
@@ -265,14 +259,6 @@
             resize: none;
     }
     
-    .field:focus,
-    .select:focus,
-    .button:focus,
-    .radio:focus~.radio-group-text,
-    .checkbox:focus~.checkbox-text {
-        outline: 2px solid #b59f5b;
-        outline-offset: 5px;
-    }
     .feedback-title {
         font-size: 20px;
         text-transform: uppercase;
@@ -917,10 +903,10 @@
     
     .our-products-title {
         display: flex;
-        /* margin: 0 0 0 45px; */
+        margin: 0 0 0 45px;
         padding: 0;
         /* width: 1600px; */
-        min-width: 366px;
+        /* min-width: 366px; */
         box-sizing: border-box;
         flex-wrap: wrap;
         margin-top: 35px;
@@ -1069,8 +1055,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 200px;
-        width: 80%;
+        /* min-width: 200px; */
+        /* width: 80%; */
         height: 83px;
         background-color: #f4f7f6;
         margin-left: auto;
@@ -1125,15 +1111,3 @@
     }
 }
 
-
-@media (min-width: 600px) and (max-width: 640px) {
-    .shop-list-last {
-        position: relative;
-        box-sizing: border-box;
-        margin: 0 0 265px 0;
-        width: 300px;
-        left:0;
-        /* height: 100%; */
-    }
-    
-}
